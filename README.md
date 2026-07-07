@@ -1,71 +1,14 @@
-# Llanquihue Tour App
+# Llanquihue Tour App - Semana 7
 
-## Descripción
+## Descripción del Proyecto
+Aplicación desarrollada en Java orientada a objetos para la gestión dinámica de los servicios turísticos de la agencia "Llanquihue Tour". En esta etapa se integró el concepto de **polimorfismo** y el uso de **colecciones dinámicas** para optimizar el recorrido y la escalabilidad del sistema.
 
-Este proyecto fue desarrollado para la actividad de la Semana 6 de Desarrollo Orientado a Objetos I.
-
-El objetivo es implementar una jerarquía de clases utilizando herencia simple para representar distintos servicios turísticos ofrecidos por la empresa Llanquihue Tour.
-
-## Clases Creadas
-
-### Superclase
-- ServicioTuristico
-
-### Subclases
-- RutaGastronomica
-- PaseoLacustre
-- ExcursionCultural
-
-### Gestión de Servicios
-- GestorServicios
-
-### Clase Principal
-- Main
-
-## Conceptos Aplicados
-
-- Encapsulamiento
-- Herencia
-- Constructores
-- Getters y Setters
-- Sobrescritura de métodos (@Override)
-- Uso de super()
-
-## Estructura del Proyecto
-
-```
-src
-├── model
-│   ├── ServicioTuristico.java
-│   ├── RutaGastronomica.java
-│   ├── PaseoLacustre.java
-│   └── ExcursionCultural.java
-│
-├── data
-│   └── GestorServicios.java
-│
-└── ui
-    └── Main.java
-```
+## Cambios Implementados (Semana 7)
+* **Colecciones Polimórficas**: Se reemplazó el almacenamiento estático por una estructura dinámica `List<ServicioTuristico>` implementada mediante `ArrayList` dentro de la clase `GestorServicios`.
+* **Método mostrarInformacion()**: Se implementó y sobrescribió este método en la jerarquía de clases para desplegar los atributos específicos de cada servicio en consola de forma dinámica.
+* **Recorrido Dinámico**: Se configuró un bucle `for-each` en la clase `Main` que demuestra el polimorfismo puro, eliminando la necesidad de utilizar condicionales de tipo o la instrucción `instanceof`.
 
 ## Instrucciones de Ejecución
-
-1. Abrir el proyecto en IntelliJ IDEA.
-2. Verificar que las clases estén organizadas en los paquetes:
-    - model
-    - data
-    - ui
-3. Ejecutar la clase Main.
-4. Observar los resultados en la consola.
-
-## Autor
-
-Misael Riveros Plaza
-
-## Asignatura
-
-Desarrollo Orientado a Objetos I
-
-## Institución
-
-Duoc UC
+1. Clonar el repositorio.
+2. Compilar el proyecto desde la raíz.
+3. Ejecutar la clase `Main.java` ubicada en el paquete `ui`.
