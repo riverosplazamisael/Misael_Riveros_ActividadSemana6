@@ -1,6 +1,6 @@
 package model;
 
-public class RutaGastronomica extends ServicioTuristico {
+public class RutaGastronomica extends ServicioTuristico  {
 
     private int numeroDeParadas;
 
@@ -28,5 +28,7 @@ public class RutaGastronomica extends ServicioTuristico {
         super.mostrarInformacion();
         System.out.println(" | Tipo: Ruta Gastronómica | Paradas: " + numeroDeParadas);
     }
+
+
 
 }
